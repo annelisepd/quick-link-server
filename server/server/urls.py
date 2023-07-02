@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+import quicklink.views as ql
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('<str:key>', ql.redirect_end),
 ]
