@@ -8,7 +8,7 @@
 >cd DjangoServer
 >python -m venv venv
 >venv\Scripts\activate
->pip install -r requirements
+>pip install -r requirements.txt
 >```
 >
 >```bash
@@ -22,4 +22,10 @@
 >setx DB_PASSWORD "root"
 >setx DB_HOST "127.0.0.1"
 >setx DB_PORT "3306"
+>```
+>```bash
+>cd server
+>python manage.py makemigrations
+>python manage.py migrate
+>python manage.py runserver
 >```
