@@ -14,6 +14,7 @@
 >```bash
 >setx DJANGO_SECRET "secret_key"
 >setx DJANGO_HOST "www.host.com"
+>setx DJANGO_DEBUG "False"
 >```
 >
 >```bash
