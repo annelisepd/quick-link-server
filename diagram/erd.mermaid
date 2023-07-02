@@ -1,0 +1,15 @@
+erDiagram
+  redirect {
+    id integer
+    key CharField
+    url CharField
+  }
+
+  access {
+    id integer
+    creation DateTimeField
+    ip CharField
+    user_agent CharField
+  }
+
+  redirect ||--o{ access : "contains"

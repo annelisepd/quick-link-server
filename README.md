@@ -24,7 +24,6 @@
 >setx DB_HOST "127.0.0.1"
 >setx DB_PORT "3306"
 >```
-
 >```bash
 >cd server
 >python manage.py makemigrations
