@@ -15,6 +15,6 @@ def create_redirect(request):
         if url:
             redirect = Redirect(url=url)
             redirect.save()
-            link = request.build_absolute_uri('/') + 'link/' + redirect.key
+            link = request.build_absolute_uri('/') + redirect.key
     
     return render(request, 'create_redirect.html', {'link': link})
