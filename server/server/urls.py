@@ -20,5 +20,6 @@ import quicklink.views as ql
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('<str:key>', ql.redirect_end),
+    path('new/', ql.create_redirect),
+    path('link/<str:key>', ql.redirect_end)
 ]
