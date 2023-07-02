@@ -5,7 +5,7 @@ import secrets
 # Create your models here.
 
 class Redirect(models.Model):
-    key = models.CharField(max_length=10, null=True, unique=True)
+    key = models.CharField(max_length=10, blank=True, unique=True)
     url = models.TextField()
 
     def __str__(self):
