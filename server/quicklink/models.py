@@ -24,7 +24,7 @@ class Redirect(models.Model):
 class Access(models.Model):
     creation = models.DateTimeField(auto_now=True)
     ip = models.CharField(max_length=39)
-    user_agent = models.CharField(max_length=100)
+    user_agent = models.TextField()
     redirect = models.ForeignKey(Redirect, on_delete=models.CASCADE)
 
     def __str__(self):
