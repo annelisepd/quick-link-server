@@ -1,7 +1,7 @@
 > ## Windows Guide
 >
 >```bash
->git clone git@github.com:RosyMaple/DjangoServer.git
+>git clone https://github.com/RosyMaple/DjangoServer.git
 >```
 >
 >```bash
