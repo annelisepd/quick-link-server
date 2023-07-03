@@ -1,3 +1,37 @@
+# QuickLink 🔗
+
+Welcome to QuickLink, your go-to Django project for effortless URL management. With QuickLink, you can create shortened links paired with unique keys that seamlessly redirect users to their desired destinations. Gone are the days of dealing with lengthy URLs – QuickLink simplifies and enhances your browsing experience.
+
+## Features 🎯
+
+- **Create Shortened Links:** User-friendly interface to generate shortened links for your desired URLs.
+- **URL Redirection:** Direct users to the intended destinations by simply using the generated shortened links.
+- **Tracking User Information:** QuickLink records essential information such as user agents and IP addresses for every access, providing valuable insights.
+
+## Installation 🚀
+
+To get started with QuickLink, follow these simple steps:
+
+1. Clone this repository to your local machine.
+2. Create and activate a virtual environment.
+3. Install the project dependencies using `pip`.
+4. Configure your database settings in `settings.py`.
+5. Apply database migrations.
+6. Launch the development server.
+
+[Windows Configuration Guide](#windows-configuration-guide) | [Ubuntu Configuration Guide](#ubuntu-configuration-guide)
+
+## Contributing 🤝
+
+If you encounter any issues, have suggestions for improvements, or would like to contribute new features, feel free to submit a pull request. We welcome contributions and appreciate your interest in contributing to QuickLink! 💚
+
+## Special Thanks 🙌
+
+A big shoutout to [@WhitePoodleMoth](https://github.com/WhitePoodleMoth) for their valuable contribution to this project. Thank you for your dedication and commitment to QuickLink!
+
+<br> ⬇ <br>
+
+# Installation Guide ⚙️
 ## Windows Configuration Guide
 >
 >### Previous Requirements:
@@ -22,7 +56,7 @@
 >
 >```bash
 >setx DJANGO_SECRET "secret_key"
->setx DJANGO_HOST "quicklink.com"
+>setx DJANGO_HOST "*"
 >setx DJANGO_DEBUG "False"
 >```
 > <sub>💡 Tip: Generate your secret key at https://djecrety.ir/ </sub> <br>
@@ -71,11 +105,12 @@
 > ```
 > Add the following lines at the end of the file to set the environment variables:
 >```bash
->export DJANGO_SECRET="secret_key"
->export DJANGO_HOST="quicklink.com"
+>export DJANGO_SECRET="your private secret key"
+>export DJANGO_HOST="*"
 >export DJANGO_DEBUG="False"
 >```
-><sub>💡 In Ubuntu, if a string (e.g. your secret key) contains "$", it will throw an error. In case this happens, replace the ocurrencies with any other character.</sub> <br>
+><sub>💭 In Ubuntu, if a string (e.g. your secret key) contains "$", it will throw an error. In case this happens with your generated key, simply replace the ocurrencies with any other character.</sub> <br>
+> <sub>💡 Tip: Generate your secret key at https://djecrety.ir/ </sub> <br>
 > <br>
 > #### **4. Set Global Variables to MySQL Database**
 > In the .bashrc file, also add these lines: <br>
