@@ -15,7 +15,7 @@ To get started with QuickLink, follow these simple steps:
 1. Clone this repository to your local machine.
 2. Create and activate a virtual environment.
 3. Install the project dependencies using `pip`.
-4. Configure your database settings in `settings.py`.
+4. Configure the Django settings with global variables.
 5. Apply database migrations.
 6. Launch the development server.
 
