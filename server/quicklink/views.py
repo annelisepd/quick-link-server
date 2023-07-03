@@ -12,6 +12,7 @@ def redirect_end(request, key):
 
 def create_redirect(request):
     link = None
+    url = None
     
     if request.method == 'POST':
         url = request.POST.get('url')
@@ -20,4 +21,4 @@ def create_redirect(request):
             redirect.save()
             link = request.build_absolute_uri('/') + redirect.key
     
-    return render(request, 'create_redirect.html', {'link': link})
+    return render(request, 'create_redirect.html', {'link': link, 'url': url})
