@@ -55,8 +55,8 @@ A big shoutout to [@WhitePoodleMoth](https://github.com/WhitePoodleMoth) for the
 > #### **3. Set Global Variables to Django Settings**
 >
 >```bash
->setx DJANGO_SECRET "secret_key"
->setx DJANGO_HOST "*"
+>setx DJANGO_SECRET "{secret_key}"
+>setx DJANGO_HOST "{domain}"
 >setx DJANGO_DEBUG "False"
 >```
 > <sub>💡 Tip: Generate your secret key at https://djecrety.ir/ </sub> <br>
@@ -78,7 +78,7 @@ A big shoutout to [@WhitePoodleMoth](https://github.com/WhitePoodleMoth) for the
 >python manage.py runserver
 >```
 
-## Ubuntu Configuration Guide
+## Linux Configuration Guide
 >
 >### Previous Requirements:
 > - Python
@@ -105,8 +105,8 @@ A big shoutout to [@WhitePoodleMoth](https://github.com/WhitePoodleMoth) for the
 > ```
 > Add the following lines at the end of the file to set the environment variables:
 >```bash
->export DJANGO_SECRET="your private secret key"
->export DJANGO_HOST="*"
+>export DJANGO_SECRET="{secret_key}"
+>export DJANGO_HOST="{domain}"
 >export DJANGO_DEBUG="False"
 >```
 ><sub>💭 In Ubuntu, if a string (e.g. your secret key) contains "$", it will throw an error. In case this happens with your generated key, simply replace the ocurrencies with any other character.</sub> <br>
