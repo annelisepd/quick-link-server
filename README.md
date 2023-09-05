@@ -123,7 +123,7 @@ A big shoutout to [@WhitePoodleMoth](https://github.com/WhitePoodleMoth) for the
 >export DB_PORT="3306"
 >```
 > To save, press Ctrl + S. Then, Ctrl + X to exit the file. <br>
-> For the changes to be applied, you need to restart the terminal or run the following command?
+> For the changes to be applied, you need to restart the terminal or run the following command:
 >```bash
 > source ~/.bashrc
 > ```
