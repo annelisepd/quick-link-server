@@ -78,7 +78,7 @@ A big shoutout to [@WhitePoodleMoth](https://github.com/WhitePoodleMoth) for the
 >python manage.py runserver
 >```
 
-## Linux Configuration Guide
+## Ubuntu Configuration Guide
 >
 >### Previous Requirements:
 > - Python
