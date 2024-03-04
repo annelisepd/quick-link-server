@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,13 +21,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("DJANGO_SECRET")
-
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DJANGO_DEBUG").lower() == "true"
+DEBUG = config('DJANGO_DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = [os.getenv("DJANGO_HOST")]
+# SECURITY WARNING: keep the secret key used in production secret!
+if DEBUG:
+    SECRET_KEY = config('DJANGO_SECRET_KEY', default='django-insecure-+_^bxs%r5k3^**ch2$2x1fi4u495pvi-#cm$+@iv$msjj%h1n2')
+else:
+    SECRET_KEY = config('DJANGO_SECRET_KEY')
+
+if DEBUG:
+    ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS', default='127.0.0.1,0.0.0.0,localhost').split(',')
+else:
+    ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS').split(',')
 
 
 # Application definition
