@@ -1,4 +1,4 @@
-# QuickLink 🔗
+# QuickLink https://quick-link.buildsandbox.cloud/ 🔗
 
 Welcome to QuickLink, your go-to Django project for effortless URL management. With QuickLink, you can create shortened links paired with unique keys that seamlessly redirect users to their desired destinations. Gone are the days of dealing with lengthy URLs – QuickLink simplifies and enhances your browsing experience.
 
